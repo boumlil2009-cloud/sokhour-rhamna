@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صخور الرحامنة - تراث الرحامنة الأصيل</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Tajawal',sans-serif}
+:root{--green:#1a5d2a;--gold:#d4a017;--sand:#fdf6e3}
+body{background:var(--sand)}
+.hero{position:relative;height:95vh;background:url('hero.jpg') center/cover no-repeat}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6))}
+.hero-content{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;width:90%}
+.hero-content h1{font-family:'Amiri',serif;font-size:4rem;text-shadow:0 3px 10px #000}
+.hero-content p{font-size:1.5rem;margin:15px 0;background:rgba(26,93,42,0.85);display:inline-block;padding:8px 25px;border-radius:30px}
+nav{position:sticky;top:0;z-index:100;background:var(--green);display:flex;justify-content:center;gap:10px;padding:12px;flex-wrap:wrap;box-shadow:0 3px 10px rgba(0,0,0,0.3)}
+nav a{color:#fff;text-decoration:none;padding:8px 20px;border:1px solid var(--gold);border-radius:25px;font-weight:700;transition:.3s}
+nav a:hover,nav a.active{background:var(--gold);color:var(--green)}
+section{padding:70px 20px;max-width:1200px;margin:auto;display:none}
+section.active{display:block}
+h2{font-family:'Amiri',serif;color:var(--green);font-size:2.6rem;text-align:center;margin-bottom:10px}
+.sub{text-align:center;color:#666;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.1);border-bottom:4px solid var(--green)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card .txt{padding:18px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;cursor:pointer;transition:.3s}
+.gallery img:hover{transform:scale(1.03)}
+.video{aspect-ratio:16/9;background:#000;border-radius:15px;overflow:hidden}
+footer{background:var(--green);color:#fff;text-align:center;padding:30px;margin-top:40px}
+.btn{background:var(--green);color:#fff;padding:12px 30px;border-radius:25px;text-decoration:none;display:inline-block;font-weight:700}
+input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="hero-content">
+<h1>صخور الرحامنة</h1>
+<p>أرض الخيل والبارود • الصبار المقاوم • المساجد العتيقة • الكرم الرحماني</p><br>
+<a href="#" onclick="showPage('about')" class="btn" style="background:var(--gold);color:var(--green);margin-top:20px">ادخل للموقع</a>
+</div>
+</div>
+
+<nav>
+<a onclick="showPage('about')" id="nav-about" class="active">منطقة صخور</a>
+<a onclick="showPage('tourath')" id="nav-tourath">تراث صخور</a>
+<a onclick="showPage('photos')" id="nav-photos">معرض الصور</a>
+<a onclick="showPage('videos')" id="nav-videos">الفيديوهات</a>
+<a onclick="showPage('activities')" id="nav-activities">التعاونيات والجمعيات</a>
+<a onclick="showPage('contact')" id="nav-contact">اتصل بنا</a>
+</nav>
+
+<!-- 1 - منطقة صخور -->
+<section id="about" class="active">
+<h2>منطقة صخور الرحامنة</h2>
+<p class="sub">إقليم الرحامنة - جهة مراكش آسفي - جماعة صخور، سيدي غانم، دوار لكورات</p>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600"><div class="txt"><h3>الموقع الجغرافي</h3><p>تبعد 60 كلم عن بنجرير، أرض شبه صحراوية مشهورة بجبالها الصخرية وحقول الصبار والزيتون.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600"><div class="txt"><h3>المسجد العتيق</h3><p>مساجد صخور وسيدي غانم بطرازها الطيني والقبة الخضراء، مركز الروح والتعليم العتيق.</p></div></div>
+<div class="card"><img src="hero.jpg"><div class="txt"><h3>الاقتصاد الجديد</h3><p>4000 هكتار صبار مقاوم، 1000 هكتار أتريبلكس، 400 هكتار خروب، وتربية النحل والدجاج البلدي.</p></div></div>
+</div>
+</section>
+
+<!-- 2 - تراث صخور -->
+<section id="tourath">
+<h2>تراث صخور الرحامنة</h2>
+<p class="sub">خيل، بارود، خيمة، وكرم لا ينسى</p>
+<div class="grid">
+<div class="card"><div class="txt"><h3>🐴 التبوريدة الرحمانية</h3><p>فرسان الرحامنة معروفين باللباس الأبيض والبرنوس والعمامة، والخيل المزينة بالجلد والفضة. موسم سيدي غانم يجمع أكثر من 30 سربة سنويا.</p></div></div>
+<div class="card"><div class="txt"><h3>⛺ الخيمة الرحمانية</h3><p>الخيمة من الصوف والوبر، فيها المجمر والبراد والزربية الرحمانية الحمراء. رمز الضيافة والكرم.</p></div></div>
+<div class="card"><div class="txt"><h3>🌵 الصبار - الهندية</h3><p>كان مصدر رزق المنطقة حتى ضربته الحشرة القرمزية. اليوم رجع بالصنف المقاوم بفضل مشروع 70 مليون درهم.</p></div></div>
+<div class="card"><div class="txt"><h3>🍲 المطبخ الرحماني</h3><p>الرفيسة الرحمانية، الكسكس بالخليع، المروزية، والخبز الطابون. والشاي المنعنع فالخيمة.</p></div></div>
+</div>
+</section>
+
+<!-- 3 - الصور -->
+<section id="photos">
+<h2>معرض الصور</h2>
+<p class="sub">صور من دوار لكورات، سيدي غانم، صخور</p>
+<div class="grid gallery">
+<img src="hero.jpg" alt="صخور الرحامنة">
+<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600" alt="خيل">
+<img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600" alt="صبار">
+<img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d644?w=600" alt="مسجد">
+<img src="https://images.unsplash.com/photo-1501686637-b7d9a6a1a2c6?w=600" alt="خيمة">
+<img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600" alt="صحراء">
+</div>
+</section>
+
+<!-- 4 - الفيديو -->
+<section id="videos">
+<h2>فيديوهات صخور الرحامنة</h2>
+<div class="grid">
+<div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="تبوريدة الرحامنة" frameborder="0" allowfullscreen></iframe></div>
+<div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/9bZkp7q19f0" title="مشروع الصبار" frameborder="0" allowfullscreen></iframe></div>
+</div>
+<p style="text-align:center;margin-top:20px">تقدر تبدل روابط يوتيوب بروابط حقيقية ديال صخور الرحامنة</p>
+</section>
+
+<!-- 5 - الأنشطة -->
+<section id="activities">
+<h2>التعاونيات والجمعيات</h2>
+<div class="grid">
+<div class="card"><div class="txt"><h3>تعاونية لكورات للصبار المقاوم</h3><p><b>النشاط:</b> غرس 20 هكتار صبار + تثمين (زيت، مربى، علف)<br><b>الأعضاء:</b> 5 فلاحين من دوار لكورات<br><b>الدعم:</b> شتلات، نقطة ماء، خلايا نحل</p><a href="#" class="btn">انخرط</a></div></div>
+<div class="card"><div class="txt"><h3>جمعية نساء سيدي غانم للتنمية</h3><p><b>النشاط:</b> تربية الدجاج البلدي، النسيج، تثمين الصبار<br><b>الدعم:</b> مشاريع مدرة للدخل للمرأة القروية</p><a href="#" class="btn">تواصل</a></div></div>
+<div class="card"><div class="txt"><h3>جمعية فرسان صخور للتبوريدة</h3><p><b>النشاط:</b> الحفاظ على الخيل العربية، تنظيم موسم سيدي غانم<br><b>عدد السربات:</b> 12 سربة</p><a href="#" class="btn">شاهد</a></div></div>
+</div>
+</section>
+
+<!-- 6 - اتصل بنا -->
+<section id="contact">
+<h2>اتصل بنا</h2>
+<div class="grid">
+<div class="card"><div class="txt">
+<h3>جماعة سيدي غانم - دوار لكورات</h3>
+<p>📍 إقليم الرحامنة - بنجرير<br>📞 06 XX XX XX XX<br>✉️ sokhour.rahamna@gmail.com<br><br>للتبليغ عن الفساد: chikaya.ma<br>للدعم الفلاحي: DPA الرحامنة - بنجرير</p>
+</div></div>
+<div class="card"><div class="txt">
+<h3>راسلنا</h3>
+<input placeholder="الاسم الكامل">
+<input placeholder="رقم الهاتف">
+<textarea rows="4" placeholder="رسالتك..."></textarea>
+<a href="https://wa.me/212600000000" class="btn">إرسال عبر واتساب</a>
+</div></div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 صخور الرحامنة - سيدي غانم - دوار لكورات | تصميم تراثي مغربي</p>
+</footer>
+
+<script>
+function showPage(id){
+document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+document.getElementById('nav-'+id).classList.add('active');
+window.scrollTo({top:document.querySelector('nav').offsetTop,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
