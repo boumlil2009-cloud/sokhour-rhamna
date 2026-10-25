@@ -1,0 +1,13 @@
+{
+  "name": "صخور الرحامنة",
+  "short_name": "صخور الرحامنة",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a4d2a",
+  "theme_color": "#e0a93b",
+  "icons": [{
+    "src": "https://cdn-icons-png.flaticon.com/512/25/25694.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
